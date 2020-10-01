@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MyJavaDemo",
+      "request": "launch",
+      "mainClass": "MyJavaDemo",
+      "classPaths": [
+        ".",
+        "C:\\Users\\MUKESHGUPTA\\workspace\\IAMaaS\\IGI_LIB\\VA Deployment\\json-20140107.jar"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HelloWorld",
+      "request": "launch",
+      "mainClass": "HelloWorld",
+      "classPaths": [
+        "C:\\Users\\MUKESHGUPTA\\workspace\\IAMaaS\\IGI_LIB\\VA Deployment\\json-20140107.jar"
+      ]
+    }
+  ]
+}
