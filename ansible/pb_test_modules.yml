@@ -1,0 +1,31 @@
+---
+# Test Modules
+- name: Test Modules
+  hosts: localhost
+  gather_facts: false
+  any_errors_fatal: true
+
+  tasks:
+    - name: Display message
+      mod1:
+        message: "Hello Module1"
+
+# Test Modules
+- name: Test Modules - within Role-
+  hosts: localhost
+  gather_facts: false
+  any_errors_fatal: true
+
+  roles:
+    - role: test_role
+      when: false
+  tasks:
+    - include_tasks: roles/test_role/tasks/main.yml
+# # Test Modules
+# - name: Test Modules - Role Task
+#   hosts: localhost
+#   gather_facts: false
+#   any_errors_fatal: true
+
+#   tasks:
+#     - include_tasks: roles/test_role/tasks/main.yml

@@ -1,0 +1,5 @@
+{
+  "ANSIBLE_MODULE_ARGS": {
+    "message": "hello Message From args.json"
+  }
+}

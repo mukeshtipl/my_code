@@ -1,0 +1,4 @@
+---
+- name: Module mod2 inside Role
+  mod2:
+    message: "Hello Module2 inside Role"
