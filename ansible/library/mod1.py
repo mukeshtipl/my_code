@@ -1,5 +1,12 @@
 #!/usr/bin/python
 
+from ansible.module_utils.my_utils import MyHelper
+from ansible.module_utils.basic import AnsibleModule
+import pandas as pd
+import csv
+import io
+import sys
+import os
 ANSIBLE_METADATA = {
     'metadata_version': '1.1',
     'status': ['preview'],
@@ -49,13 +56,6 @@ RETURN = '''
 
 '''
 
-import os
-import sys
-import io
-import csv
-import pandas as pd
-#import yaml
-
 
 def run_module():
     # define the available arguments/parameters that a user can pass to
@@ -69,7 +69,7 @@ def run_module():
 
     if module.check_mode:
         return result
-    #module.exit_json(**result)
+    # module.exit_json(**result)
 
     try:
 
@@ -100,7 +100,5 @@ def main():
     run_module()
 
 
-from ansible.module_utils.basic import AnsibleModule
-from ansible.module_utils.my_utils import MyHelper
 if __name__ == '__main__':
     main()
